@@ -217,7 +217,7 @@ public class ChangbaPlayerActivity extends Activity implements OnSeekBarChangeLi
 				};
 				playerController.setUseMediaCodec(false);
 				int width = getWindowManager().getDefaultDisplay().getWidth();
-				String path = "https://media.w3.org/2010/05/sintel/trailer.mp4";
+				String path = "http://media.w3.org/2010/05/sintel/trailer.mp4";
 				//String path = "http://192.168.18.10/~seraphic%5cchendh/source/videos/vid.mp4";
 				//String path = "/mnt/sdcard/Movies/ad.mp4";
 				Log.i("CDH DEBUG", "playerController.init src path: " + path);

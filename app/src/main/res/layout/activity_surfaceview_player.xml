@@ -3,21 +3,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFC0C0C0"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
-    <SurfaceView
-        android:id="@+id/gl_surface_view"
-        android:layout_width="match_parent"
-        android:layout_height="429dp" />
+    <RelativeLayout
+        android:id="@+id/player_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/pause_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pause" />
+
+        <Button
+            android:id="@+id/continue_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/pause_btn"
+            android:text="@string/play" />
+    </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/timelabel_layout"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="-11dp"
         android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
         android:layout_marginRight="5dp"
-        android:layout_marginTop="3dp" >
+        android:layout_marginBottom="-11dp">
 
         <TextView
             android:id="@+id/current_time_label"
@@ -43,30 +57,21 @@
         android:maxHeight="10dp"
         android:minHeight="10dp"
         android:paddingLeft="0dp"
-        android:paddingRight="0dp"
         android:paddingTop="0dp"
+        android:paddingRight="0dp"
         android:progress="0"
         android:progressDrawable="@drawable/music_player_seekbar"
         android:secondaryProgress="0"
         android:thumb="@drawable/playback_player_control_button" />
 
-    <RelativeLayout
-        android:id="@+id/player_layout"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
+    <SurfaceView
+        android:id="@+id/gl_surface_view"
+        android:layout_width="900dp"
+        android:layout_height="310dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="50dp" />
 
-        <Button
-            android:id="@+id/pause_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/pause" />
-
-        <Button
-            android:id="@+id/continue_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/pause_btn"
-            android:text="@string/play" />
-    </RelativeLayout>
 
 </LinearLayout>
