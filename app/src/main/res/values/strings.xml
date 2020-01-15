@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">video_player</string>
+    <string name="pause">pause</string>
+    <string name="play">play</string>
+    <string name="Video_Player">Video Player</string>
+    <string name="forward_page">Start to play</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
